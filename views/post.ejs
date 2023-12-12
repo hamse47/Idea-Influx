@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs') %>
+
+<main class="main-content">
+  <article class="blog-post">
+    <h1 class="post-title"><%= post.title %></h1>
+    <div class="post-content">
+      <p><%= post.content %></p>
+    </div>
+    <div class="post-actions">
+      <a href="/edit/<%= post.id %>" class="edit-button">Edit</a> |
+      <a href="/delete/<%= post.id %>" class="delete-button">Delete</a>
+    </div>
+  </article>
+</main>
+
+<%- include('../partials/footer.ejs') %>

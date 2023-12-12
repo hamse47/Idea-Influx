@@ -1,0 +1,18 @@
+<% include ../partials/header.ejs %>
+
+<main>
+  <h2>Edit Post</h2>
+  <form action="/posts/<%= post._id %>" method="POST">
+    <!-- Assuming each post has a unique '_id' -->
+    <input
+      type="text"
+      name="title"
+      value="<%= post.title %>"
+      placeholder="Title"
+    />
+    <textarea name="content"><%= post.content %></textarea>
+    <button type="submit">Update</button>
+  </form>
+</main>
+
+<% include ../partials/footer.ejs %>

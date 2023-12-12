@@ -1,0 +1,25 @@
+<%- include('../partials/header.ejs') %>
+
+<main class="main-content">
+  <h1>Home Page</h1>
+
+  <!-- Link to Blog Post Submission Page -->
+  <section class="submit-new-post">
+    <a href="/new-post" class="new-post-link">Create a New Blog Post</a>
+  </section>
+
+  <!-- Blog Posts Display Section -->
+  <section class="blog-posts">
+    <% if (posts && posts.length > 0) { %> <% posts.forEach(post => { %>
+    <article class="post">
+      <h2 class="post-title"><%= post.title %></h2>
+      <p class="post-content"><%= post.content %></p>
+      <!-- Add Edit and Delete links here if needed -->
+    </article>
+    <% }) %> <% } else { %>
+    <p>No posts to display.</p>
+    <% } %>
+  </section>
+</main>
+
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,124 @@
+/* style.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4a35c;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #c68851;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header a,
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+.blog-post {
+  background-color: pink;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10%;
+}
+
+.post-title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-content p {
+  color: #666;
+}
+
+.post-actions a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.post-actions a:hover {
+  text-decoration: underline;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.main-content {
+  max-width: 800px; /* or 100% */
+  margin: auto;
+  overflow-y: auto; /* Enables vertical scrolling if content is taller than the viewport */
+  word-wrap: break-word; /* Breaks long words to ensure they don't overflow */
+}
+
+.post {
+  margin-bottom: 20px; /* Spacing between posts */
+  padding: 15px; /* Padding inside posts */
+}
+
+.post-content {
+  max-height: 500px; /* or any suitable value */
+  overflow-y: auto; /* Scroll inside a post if content is too long */
+  word-wrap: break-word;
+}
