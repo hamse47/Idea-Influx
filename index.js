@@ -32,7 +32,6 @@ app.post("/submit", (req, res) => {
   };
   posts.push(newPost);
   res.redirect("/");
-  // Remove the console.log for production
 });
 
 app.listen(PORT, () => {
