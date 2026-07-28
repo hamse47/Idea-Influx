@@ -121,4 +121,5 @@ input[type="submit"]:hover {
   max-height: 500px; /* or any suitable value */
   overflow-y: auto; /* Scroll inside a post if content is too long */
   word-wrap: break-word;
+  white-space: pre-wrap; /* Keep the line breaks the author typed */
 }
